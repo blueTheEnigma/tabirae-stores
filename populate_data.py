@@ -49,7 +49,7 @@ for i, filename in enumerate(shirts):
         'id': f'SHRT-{i+1:03d}',
         'name': f'Vertical Stripe Knit Polo - Variant {i+1}',
         'category': 'Shirts',
-        'price': 23000,
+        'price': 27000,
         'variants': 'S, M, L, XL',
         'in_stock': True,
         'image_url': shirt_links.get(base, f'placeholder_for_{filename}'),
