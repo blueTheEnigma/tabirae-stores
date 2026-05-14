@@ -351,9 +351,9 @@ function App() {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
             className="filters" 
-            style={{ display: 'flex', justifyContent: 'center', gap: '3rem' }}
+            style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}
           >
-            {['All', 'Shirts', 'Scarves'].map(cat => (
+            {['All', ...new Set(allProducts.map(p => p.category))].map(cat => (
               <button 
                 key={cat} 
                 onClick={() => setFilter(cat)}
